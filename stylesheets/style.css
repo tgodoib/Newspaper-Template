@@ -1,192 +1,195 @@
 /*      FONTS     */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap");
 
 /*      CONSTANTES      */
 :root {
-    --almost-black: #595959;
-    --almost-white: #FFF4EC;
-    --red: #FF7477;
-    --beige: #F2E9DC;
-    --green: #808F85;
+	--almost-black: #595959;
+	--almost-white: #fff4ec;
+	--red: #ff7477;
+	--beige: #f2e9dc;
+	--green: #808f85;
 
-    --mouse-x: -10%;
-    --mouse-y: -10%;
+	--mouse-x: -10%;
+	--mouse-y: -10%;
 }
 
 /*      GERAL     */
 
 .material-icons-outlined {
-    font-family: 'Material Icons';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px; /* Preferred icon size */
-    display: inline-block;
-    line-height: 1;
-    text-transform: none;
-    letter-spacing: normal;
-    word-wrap: normal;
-    white-space: nowrap;
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
-    font-feature-settings: 'liga';
+	font-family: "Material Icons";
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px; /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: "liga";
 }
 
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
-body, html {
-    width: 100%;
-    min-height: 100vh;
+body,
+html {
+	width: 100%;
+	min-height: 100vh;
 
-    background-color: var(--beige);
-    overflow-x: hidden;
+	background-color: var(--beige);
+	overflow-x: hidden;
 }
 
 section {
-    height: 100vh;
-    width: 100%;
+	height: 100vh;
+	width: 100%;
 }
 
 /*      HOME      */
 
 #home {
-    font-family: 'Montserrat', sans-serif;
-    position: fixed;
+	font-family: "Montserrat", sans-serif;
+	position: fixed;
 }
 
 #date {
-    position: absolute;
-    top: 20vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
+	position: absolute;
+	top: 20vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
 
-    font-weight: normal;
-    font-size: 36px;
-    text-align: center;
-    text-transform: uppercase;
+	font-weight: normal;
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
 
-    color: var(--almost-black);
-    opacity: 50%;
+	color: var(--almost-black);
+	opacity: 50%;
 }
 
 #icons {
-
 }
 
 .center {
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    width: 100%;
+	position: absolute;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 
 .title {
-    font-family: 'Playfair Display', serif;
-    font-weight: 900;
-    font-size: 96px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-size: 96px;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 
-    color: var(--red);
-    cursor: default;
+	color: var(--red);
+	cursor: default;
 }
 
 .subtitle {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    font-size: 36px;
-    text-transform: lowercase;
+	font-family: "Montserrat", sans-serif;
+	font-weight: normal;
+	font-size: 36px;
+	text-transform: lowercase;
 
-    color: var(--almost-black);
-    text-align: center;
+	color: var(--almost-black);
+	text-align: center;
 }
 
 #more {
-    position: absolute;
-    top: calc(100vh - 50px);
-    left: 50vw;
-    transform: translate(-50%, -50%);
-    font-size: 75px;
-    color: var(--almost-black);
-    opacity: 50%;
+	position: absolute;
+	top: calc(100vh - 50px);
+	left: 50vw;
+	transform: translate(-50%, -50%);
+	font-size: 75px;
+	color: var(--almost-black);
+	opacity: 50%;
 }
 
 /*      HOME EFFECTS      */
 
 #home-effects {
-    position: fixed;
-    background-color: var(--red);
-    z-index: 10;
-    clip-path: circle(7.5% at var(--mouse-x) var(--mouse-y));
+	position: fixed;
+	background-color: var(--red);
+	z-index: 10;
+	clip-path: circle(7.5% at var(--mouse-x) var(--mouse-y));
 }
 
 #home-effects .title {
-    color: var(--beige);
+	color: var(--beige);
 }
 
 #home-effects .subtitle {
-    color: var(--red);
+	color: var(--beige);
 }
 
 /*      NEWS      */
 
 #news {
-    position: absolute;
-    top: 100vh;
+	position: absolute;
+	top: 100vh;
 }
 
 .container {
-    margin: 50px;
-    height: calc(100vh - 100px);
-    width: calc(100% - 100px);
+	margin: 50px;
+	height: calc(100vh - 100px);
+	width: calc(100% - 100px);
 
-    display: grid;
+	display: grid;
 
-    grid-template-columns: calc(25% - 25px) 40% calc(35% - 25px);
-    grid-template-rows: calc(60% - 25px) 20% calc(20% - 25px);
+	grid-template-columns: calc(25% - 25px) 40% calc(35% - 25px);
+	grid-template-rows: calc(60% - 25px) 20% calc(20% - 25px);
 
-    grid-template-areas:
-        "block-1 block-3 block-4"
-        "block-2 block-3 block-4"
-        "block-2 block-3 see-more";
+	grid-template-areas:
+		"block-1 block-3 block-4"
+		"block-2 block-3 block-4"
+		"block-2 block-3 see-more";
 
-    column-gap: 25px;
-    row-gap: 25px;
-
+	column-gap: 25px;
+	row-gap: 25px;
 }
 
-#block-1, #block-2, #block-3, #block-4, #see-more {
-    background-color: var(--almost-white);
+#block-1,
+#block-2,
+#block-3,
+#block-4,
+#see-more {
+	background-color: var(--almost-white);
 }
 
 #block-1 {
-    justify-self: stretch;
-    grid-area: block-1;
+	justify-self: stretch;
+	grid-area: block-1;
 }
 
 #block-2 {
-    justify-self: stretch;
-    grid-area: block-2;
+	justify-self: stretch;
+	grid-area: block-2;
 }
 
 #block-3 {
-    justify-self: stretch;
-    grid-area: block-3;
+	justify-self: stretch;
+	grid-area: block-3;
 }
 
 #block-4 {
-    justify-self: stretch;
-    grid-area: block-4;
+	justify-self: stretch;
+	grid-area: block-4;
 }
 
 #see-more {
-    justify-self: stretch;
-    grid-area: see-more;
+	justify-self: stretch;
+	grid-area: see-more;
 }

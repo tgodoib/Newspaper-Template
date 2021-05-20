@@ -13,3 +13,9 @@ window.addEventListener('scroll', function (e) {
     document.getElementById("home").style.opacity = opacity + "%";
     document.getElementById("home-effects").style.opacity = opacity + "%";
 });
+
+// Usa a data atual e insere no topo da página
+var today = new Date();
+var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
+document.getElementById("date").innerHTML = date;
+
