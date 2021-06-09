@@ -1,14 +1,18 @@
 /*      FONTS     */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&display=swap");
 
 /*      CONSTANTES      */
 :root {
 	--almost-black: #595959;
-	--almost-white: #fff4ec;
-	--red: #ff7477;
-	--beige: #f2e9dc;
-	--green: #808f85;
+	--almost-white: #FFFCFA;
+	--red: #FF6669;
+	--beige: #F7EFE9;
+
+	/* --almost-black: #595959;
+	--almost-white: #FFF0E6;
+	--red: #FF7375;
+	--beige: #FFE0C9; */
 
 	--mouse-x: 10%;
 	--mouse-y: 50%;
@@ -34,6 +38,15 @@
 	font-feature-settings: "liga";
 }
 
+.unselectable {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -44,6 +57,7 @@ body, html {
     min-height: 100vh;
     background-color: var(--beige);
     overflow-x: hidden;
+	height: 100%;
 }
 
 section {
